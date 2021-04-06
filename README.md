@@ -3,7 +3,7 @@
  "Vue - The Complete Guide" - A Udemy Course by Maximilian Schwarzmüller
  ## Acknowledgements
  
-- **Maximilian Schwarzmüller**, for making this course available on [Udemy](https://www.udemy.com/course/vuejs-2-the-complete-guide/)
+- **Maximilian Schwarzmüller**, at [Academind.com](https://academind.com/), for making this course available on [Udemy](https://www.udemy.com/course/vuejs-2-the-complete-guide/)
 
 ## Description
 
