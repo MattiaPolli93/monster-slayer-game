@@ -7,16 +7,54 @@
 
 body {
     font-family: "Jost", sans-serif;
+    height: 100vh;
+    background-color: #9bf8ff;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cb348504-9154-420d-b60b-02b047232ee2/dbqsqny-d93e3aa7-7324-4dee-b3d8-2c2292e72c14.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvY2IzNDg1MDQtOTE1NC00MjBkLWI2MGItMDJiMDQ3MjMyZWUyXC9kYnFzcW55LWQ5M2UzYWE3LTczMjQtNGRlZS1iM2Q4LTJjMjI5MmU3MmMxNC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.U6ZVoUv3HgVF4wj-iSGL2l3bT7TOaSrAIIoke3fgLYk");
+}
+
+.container {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    box-shadow: 0 2px 8px #00000042;
+    border-radius: 12px;
 }
 
 /* Header */
 header {
     box-shadow: 0 2px 8px #00000042;
     padding: 0.5rem;
-    background-color: #880017;
+    background-color: #0c37c4;
     color: #ffffff;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+header h1,
+header img {
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-right: 20px;
+}
+
+header img {
+    width: 50px;
+    border-radius: 10%;
+    animation: rotate 3s infinite ease-in-out;
+}
+
+/* Header image animation */
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
 }
 
 /* Health sections */
@@ -35,22 +73,16 @@ section {
 }
 
 .health-bar_value {
-    background-color: #00a876;
+    background-color: #315ef3;
     width: 100%;
     height: 100%;
 }
 
-.container {
-    text-align: center;
-    padding: 0.5rem;
-    margin: 1rem auto;
-    box-shadow: 0 2px 8px #00000042;
-    border-radius: 12px;
-}
-
 #monster h2,
-#player h2 {
+#player h2,
+#log h2 {
     margin: 0.25rem;
+    font-style: italic;
 }
 
 /* Buttons section */
@@ -64,8 +96,8 @@ section {
 
 button {
     font: inherit;
-    border: 1px solid #88005b;
-    background-color: #88005b;
+    border: 1px solid #0d35b8;
+    background-color: #0d35b8;
     color: #ffffff;
     padding: 1rem 2rem;
     border-radius: 12px;
@@ -81,8 +113,8 @@ button:focus {
 
 button:hover,
 button:active {
-    background-color: #af0a78;
-    border-color: #af0a78;
+    background-color: #098dda;
+    border-color: #098dda;
     box-shadow: 1px 1px 8px #00000042;
 }
 
@@ -94,6 +126,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
+/* Battle log */
 #log ul {
     list-style: none;
     margin: 0;
@@ -102,6 +135,14 @@ button:disabled {
 
 #log li {
     margin: 0.5rem 0;
+    font-size: 20px;
+}
+
+.log-player,
+.log-monster,
+.log-damage,
+.log-heal {
+    font-weight: bold;
 }
 
 .log-player {
@@ -109,7 +150,7 @@ button:disabled {
 }
 
 .log-monster {
-    color: #da8d00;
+    color: #ff6900;
 }
 
 .log-damage {
